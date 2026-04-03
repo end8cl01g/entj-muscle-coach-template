@@ -1,29 +1,34 @@
-# ENTJ 嚴厲健身教練 Hook 系統
+# ENTJ Muscle Coach Hook System
 
-> 💪 用最高效率的方法讓你 achieve muscle up
+> 💪 Your Personal AI Fitness Coach with ENTJ Personality
+
+A complete Hook system for OpenClaw that injects ENTJ personality traits into all responses. Designed to help you achieve muscle-up with maximum efficiency through data-driven training, strict discipline, and strategic planning.
 
 ---
 
-## 快速開始
+## 🚀 Quick Start
 
-### 1. 安裝 Hook
+### 1. Install Hook
 
 ```bash
-cd ~/.openclaw/workspace/hooks/entj-muscle-coach
-./scripts/setup.sh
+# Clone the template
+git clone https://github.com/end8cl01g/entj-muscle-coach-template.git
+
+# Copy to OpenClaw workspace
+cp -r entj-muscle-coach-template ~/.openclaw/workspace/hooks/entj-muscle-coach
 ```
 
-### 2. 啟用 Hook
+### 2. Enable Hook
 
 ```bash
 openclaw hooks enable entj-muscle-coach
 ```
 
-### 3. 配置 (可選)
+### 3. Configure (Optional)
 
-編輯 `config/project-config.json` 自定義設置。
+Edit `config/project-config.json` to customize settings.
 
-### 4. 驗證
+### 4. Verify
 
 ```bash
 openclaw hooks list
@@ -31,115 +36,99 @@ openclaw hooks list
 
 ---
 
-## 功能特性
+## ✨ Features
 
-### ✅ 已實現
-
-| 功能 | 說明 | 狀態 |
-|------|------|------|
-| 身份注入 | 強制所有回應以 ENTJ 嚴厲教練身份思考 | ✅ |
-| 狀態持久化 | 自動保存訓練進度、目標、數據 | ✅ |
-| Cron Job 提醒 | 晨間/晚間訓練、每週檢視 | ✅ |
-| 雲端同步 | 支持 Git/WebDAV/S3/Dropbox/GDrive | ✅ |
-| 版本追蹤 | 語義化版本 + Changelog | ✅ |
-| 生物鐘系統 | 訓練時段識別、週期化訓練 | ✅ |
-| 自適應安裝 | 自動檢測環境並安裝 | ✅ |
-| 專案打包 | 一鍵打包整個專案 | ✅ |
-| 技術知識庫 | 完整技術文檔 + Muscle Up 訓練知識 | ✅ |
+| Feature | Description | Status |
+|---------|-------------|--------|
+| Identity Injection | All responses use ENTJ coach personality | ✅ |
+| State Persistence | Auto-save training progress, goals, data | ✅ |
+| Cron Reminders | Morning/evening workouts, weekly review | ✅ |
+| Cloud Sync | Git/WebDAV/S3/Dropbox/Google Drive | ✅ |
+| Version Tracking | Semantic versioning + Changelog | ✅ |
+| Bioclock System | Training hours, periodization | ✅ |
+| Auto Install | Adaptive environment detection | ✅ |
+| Project Packaging | One-click打包 entire project | ✅ |
+| Technical Docs | Complete knowledge base + Muscle-Up training | ✅ |
 
 ---
 
-## 目錄結構
+## 📁 Directory Structure
 
 ```
 hooks/entj-muscle-coach/
-├── HOOK.md                 # Hook 主文件
-├── identity.md             # ENTJ 教練身份定義
-├── README.md               # 本文件
-├── handler.ts              # TypeScript Hook 處理器
-├── state/                  # 狀態持久化
-│   ├── current-state.json  # 當前狀態
-│   ├── workout-log.md      # 訓練日誌
-│   └── goals.md            # 目標設定
-├── cron/                   # Cron Job
-│   └── reminders.json      # 提醒配置
-├── sync/                   # 雲端同步
-│   └── sync-config.json    # 同步配置
-├── version/                # 版本追蹤
-│   └── changelog.md        # 變更日誌
-├── bioclock/               # 生物鐘
-│   └── rhythm-config.json  # 訓練節奏配置
-├── scripts/                # 自動化腳本
-│   ├── setup.sh            # 安裝腳本
-│   ├── sync.sh             # 同步腳本
-│   └── package.sh          # 打包腳本
-├── config/                 # 配置
-│   └── project-config.json # 專案配置
-└── docs/                   # 文檔
-    └── technical-knowledge.md # 技術知識庫
+├── HOOK.md                 # Hook main file
+├── identity.md             # ENTJ coach identity definition
+├── README.md               # This file
+├── handler.ts              # TypeScript Hook handler
+├── state/                  # State persistence
+│   ├── current-state.json  # Current training state
+│   ├── workout-log.md      # Workout log
+│   └── goals.md            # Goal setting
+├── cron/                   # Cron jobs
+│   └── reminders.json      # Reminder config
+├── sync/                   # Cloud sync
+│   └── sync-config.json    # Sync config
+├── version/                # Version tracking
+│   └── changelog.md        # Changelog
+├── bioclock/               # Bioclock
+│   └── rhythm-config.json  # Training rhythm config
+├── scripts/                # Automation scripts
+│   ├── setup.sh            # Install script
+│   ├── sync.sh             # Sync script
+│   └── package.sh          # Package script
+├── config/                 # Config
+│   └── project-config.json # Project config
+└── docs/                   # Documentation
+    └── technical-knowledge.md # Technical docs
 ```
 
 ---
 
-## ENTJ 人格特質
+## 🧠 ENTJ Personality Traits
 
-| 維度 | 特質 | 健身教練表現 |
-|------|------|--------------|
-| **E** (外向) | 主導溝通 | 直接指令，不廢話，主動推動 |
-| **N** (直覺) | 戰略思維 | 長期規劃，系統化訓練，願景導向 |
-| **T** (思考) | 邏輯決策 | 數據驅動，效率優先，客觀分析 |
-| **J** (判斷) | 結構執行 | 嚴格紀律，目標導向，結果至上 |
+| Dimension | Trait | Coaching Style |
+|-----------|-------|----------------|
+| **E** (Extraverted) | Direct communication | Clear instructions, no nonsense |
+| **N** (Intuitive) | Strategic thinking | Long-term planning, systematic training |
+| **T** (Thinking) | Logical decisions | Data-driven, efficiency first |
+| **J** (Judging) | Structured execution | Strict discipline, goal-oriented |
 
-### 核心信條
+### Core Mottos
 
-- ⚡ **效率至上** - 拒絕浪費時間的訓練
-- 🎯 **結果導向** - 藉口不會讓你 muscle up，行動才會
-- 💪 **嚴格紀律** - 自律給你自由，但自律本身不自由
-- 🧠 **戰略規劃** - 沒有計畫的訓練，只是在流汗
-- 📢 **直接溝通** - 我不說好聽的話，我說有用的話
-
----
-
-## 16 週 Muscle Up 計畫
-
-| 階段 | 週期 | 重點 | 目標 |
-|------|------|------|------|
-| **基礎力量** | 1-4 週 | 拉力、推力基礎 | 引體向上 10+ |
-| **爆發力** | 5-8 週 | 高拉、爆發引體 | 胸觸槓 5+ |
-| **技術轉換** | 9-12 週 | 過渡動作 | 過渡控制 3 秒 |
-| **完整動作** | 13-16 週 | 完整 muscle up | 連續 3 次 |
+- ⚡ **Efficiency First** - No wasted training
+- 🎯 **Results Only** - Excuses don't build muscle
+- 💪 **Discipline Always** - Discipline gives freedom
+- 🧠 **Strategic Planning** - No plan = just sweating
+- 📢 **Direct Communication** - I say what's useful, not what's nice
 
 ---
 
-## 使用示例
+## 🎯 16-Week Muscle-Up Program
 
-### 查看當前狀態
+| Phase | Weeks | Focus | Goal |
+|-------|-------|-------|------|
+| **Base Strength** | 1-4 | Pull/push foundation | Pull-ups 10+ |
+| **Explosive Power** | 5-8 | High pulls, explosive | Chest-to-bar 5+ |
+| **Technical Transition** | 9-12 | Transition movement | 3s control |
+| **Full Movement** | 13-16 | Complete muscle-up | 3 consecutive |
 
-```bash
-cat state/current-state.json | jq .
-```
+---
 
-### 添加自定義提醒
+## ⚙️ Configuration
 
-編輯 `cron/reminders.json`，添加：
+### Project Config (`config/project-config.json`)
 
-```json
-{
-  "id": "custom-workout",
-  "name": "自定義訓練",
-  "schedule": {
-    "type": "cron",
-    "expression": "0 19 * * *",
-    "description": "每天晚上 7 點"
-  },
-  "message": "💪 訓練時間到了。沒有藉口，開始執行。",
-  "enabled": true
-}
-```
+| Option | Type | Description | Default |
+|--------|------|-------------|---------|
+| `workspace.restrictReadWrite` | boolean | Restrict read/write to hooks directory | true |
+| `persistence.enabled` | boolean | Enable state persistence | true |
+| `cron.enabled` | boolean | Enable Cron jobs | true |
+| `sync.enabled` | boolean | Enable cloud sync | false |
+| `bioclock.enabled` | boolean | Enable bioclock system | true |
 
-### 啟用雲端同步
+### Cloud Sync Setup
 
-編輯 `sync/sync-config.json`：
+Edit `sync/sync-config.json`:
 
 ```json
 {
@@ -148,150 +137,118 @@ cat state/current-state.json | jq .
   "config": {
     "git": {
       "enabled": true,
-      "remote": "https://github.com/your/repo.git",
+      "remote": "YOUR_REPO_URL",
       "branch": "main"
     }
   }
 }
 ```
 
-然後執行：
-
+Then run:
 ```bash
 ./scripts/sync.sh
 ```
 
-### 打包專案
-
-```bash
-./scripts/package.sh
-```
-
-輸出：
-```
-dist/entj-muscle-coach-v1.0.0.tar.gz
-dist/entj-muscle-coach-v1.0.0.zip
-```
-
 ---
 
-## 配置選項
-
-### 項目配置 (`config/project-config.json`)
-
-| 選項 | 類型 | 說明 | 預設 |
-|------|------|------|------|
-| `workspace.restrictReadWrite` | boolean | 限制讀寫僅在 hooks 目錄內 | true |
-| `persistence.enabled` | boolean | 啟用狀態持久化 | true |
-| `cron.enabled` | boolean | 啟用 Cron Job | true |
-| `sync.enabled` | boolean | 啟用雲端同步 | false |
-| `bioclock.enabled` | boolean | 啟用生物鐘系統 | true |
-
-### 生物鐘配置 (`bioclock/rhythm-config.json`)
-
-| 選項 | 類型 | 說明 |
-|------|------|------|
-| `dailyRhythm.trainingHours` | array | 訓練時段配置 |
-| `dailyRhythm.sleep` | object | 睡眠時段配置 |
-| `periodization` | object | 週期化訓練配置 |
-
----
-
-## 腳本說明
+## 📦 Scripts
 
 ### setup.sh
 
-自適應安裝腳本，自動檢測：
-- 操作系統 (Linux/macOS/Windows)
-- 包管理器 (apt/yum/brew/choco)
-- 依賴 (Node.js, Git, OpenClaw)
-
+Adaptive installation script:
 ```bash
 ./scripts/setup.sh
 ```
 
 ### sync.sh
 
-雲端同步腳本，支持多種提供者：
-
+Cloud sync script:
 ```bash
 ./scripts/sync.sh
 ```
 
 ### package.sh
 
-專案打包腳本：
-
+Project packaging:
 ```bash
 ./scripts/package.sh
 ```
 
 ---
 
-## 故障排除
+## 🔧 Troubleshooting
 
-### Hook 不觸發
+### Hook Not Triggering
 
 ```bash
+# Check hook status
 openclaw hooks list
+
+# Restart Gateway
 openclaw gateway restart
 ```
 
-### 狀態不保存
+### State Not Saving
 
 ```bash
+# Check permissions
 ls -la state/
+
+# Validate JSON
 jq . state/current-state.json
 ```
 
-### 同步失敗
+### Sync Failed
 
 ```bash
+# Check config
 cat sync/sync-config.json | jq .
+
+# Test connection
+git ls-remote <remote>
 ```
 
-詳細故障排除請參考 [docs/technical-knowledge.md](docs/technical-knowledge.md)
+For detailed troubleshooting, see [docs/technical-knowledge.md](docs/technical-knowledge.md)
 
 ---
 
-## 版本歷史
+## 💪 Training Philosophy
 
-| 版本 | 日期 | 說明 |
-|------|------|------|
-| 1.0.0 | 2026-04-02 | 初始發布 |
+### Progressive Overload
 
-完整變更日誌請參考 [version/changelog.md](version/changelog.md)
+```
+Week 1: Learn movements, build habits
+Week 2: Pull-ups 4-5 reps
+Week 3: Pull-ups 6-7 reps
+Week 4: Pull-ups 8-10 reps
+```
 
----
+### Core Principles
 
-## 教練提醒
-
-> 💪 **記住：**
-> 
-> - 沒有藉口，只有結果
-> - Muscle up 不是夢想，是計畫
-> - 效率至上，拒絕無效訓練
-> - 自律給你自由，但自律本身不自由
-
----
-
-## 貢獻
-
-歡迎提交 Issue 和 Pull Request！
-
-- GitHub: https://github.com/openclaw/openclaw
-- Discord: https://discord.com/invite/clawd
-- 文檔：https://docs.openclaw.ai
+1. **Progressive Overload** - Every week must be stronger
+2. **Compound First** - Pull-ups, dips, presses
+3. **Quality > Quantity** - Proper form over cheating
+4. **Recovery = Training** - Sleep, nutrition, active recovery
 
 ---
 
-## 許可證
+## 📄 License
 
 MIT License
 
 ---
 
-**版本**: 1.0.0  
-**作者**: workspace-hooks  
-**最後更新**: 2026-04-02  
-**服務宗旨**: 用最高效率的方法讓你 achieve muscle up
+## 🤝 Contributing
+
+Contributions welcome!
+
+- GitHub Issues: https://github.com/end8cl01g/entj-muscle-coach-template/issues
+- OpenClaw Discord: https://discord.com/invite/clawd
+- Docs: https://docs.openclaw.ai
+
+---
+
+**Version**: 1.0.0  
+**Author**: workspace-hooks  
+**Last Updated**: 2026-04-03  
+**Mission**: Maximum efficiency to achieve muscle-up
