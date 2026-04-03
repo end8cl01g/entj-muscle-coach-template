@@ -9,23 +9,23 @@
   "userProfile": {
     "name": null,
     "timezone": "UTC",
-    "fitnessLevel": "unknown",
-    "currentGoals": [],
-    "maxPullUps": null,
+    "fitnessLevel": "beginner",
+    "currentGoals": ["muscle-up"],
+    "maxPullUps": 3,
     "maxDips": null,
     "bodyWeight": null,
     "trainingDaysPerWeek": 4,
-    "availableEquipment": ["pullup-bar", "parallel-bars"]
+    "availableEquipment": ["pullup-bar", "parallel-bars", "cable-machine"]
   },
   "milestones": {
-    "pullUps": { "current": 0, "target": 10, "unit": "reps" },
+    "pullUps": { "current": 3, "target": 10, "unit": "reps" },
     "dips": { "current": 0, "target": 15, "unit": "reps" },
     "highPulls": { "current": 0, "target": 5, "unit": "reps" },
     "muscleUp": { "current": 0, "target": 1, "unit": "reps" }
   },
   "currentPhase": {
-    "name": "assessment",
-    "week": 0,
+    "name": "基礎力量",
+    "week": 1,
     "startDate": null,
     "endDate": null
   },
@@ -36,5 +36,8 @@
     "restHours": ["12:00-14:00"],
     "sleepHours": ["22:00-06:00"]
   },
-  "notes": []
+  "notes": [
+    "這是 Template 版本 - 請根據您的需求修改配置",
+    "私人數據應存儲在 Private 倉庫中"
+  ]
 }
