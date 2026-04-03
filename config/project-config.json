@@ -1,0 +1,117 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "entj-muscle-coach",
+    "displayName": "ENTJ 嚴厲健身教練",
+    "description": "ENTJ 人格特質的嚴厲健身教練 Hook 系統 - 用最高效率的方法讓你 achieve muscle up",
+    "author": "workspace-hooks",
+    "license": "MIT"
+  },
+  
+  "persona": {
+    "type": "ENTJ",
+    "role": "fitness-coach",
+    "traits": {
+      "extraverted": true,
+      "intuitive": true,
+      "thinking": true,
+      "judging": true
+    },
+    "capabilities": [
+      "efficiency-first",
+      "results-driven",
+      "discipline-focused",
+      "strategic-planning",
+      "direct-communication"
+    ]
+  },
+  
+  "workspace": {
+    "basePath": "hooks/entj-muscle-coach",
+    "restrictReadWrite": true,
+    "allowedDirectories": [
+      "state",
+      "cron",
+      "sync",
+      "version",
+      "bioclock",
+      "config",
+      "docs"
+    ]
+  },
+  
+  "persistence": {
+    "enabled": true,
+    "format": "json",
+    "autoSave": true,
+    "saveInterval": 60000,
+    "backup": {
+      "enabled": true,
+      "maxBackups": 10,
+      "retentionDays": 30
+    }
+  },
+  
+  "cron": {
+    "enabled": true,
+    "timezone": "UTC",
+    "defaultReminders": [
+      "morning-workout",
+      "evening-workout",
+      "weekly-review",
+      "rest-day-reminder"
+    ]
+  },
+  
+  "sync": {
+    "enabled": false,
+    "provider": null,
+    "autoSync": false,
+    "conflictResolution": "newest"
+  },
+  
+  "versioning": {
+    "enabled": true,
+    "strategy": "semver",
+    "autoTag": false,
+    "changelog": "version/changelog.md"
+  },
+  
+  "bioclock": {
+    "enabled": true,
+    "timezone": "UTC",
+    "trainingHours": ["06:00-08:00", "17:00-20:00"],
+    "restHours": ["12:00-14:00"],
+    "sleepHours": ["22:00-06:00"],
+    "trainingReminders": true
+  },
+  
+  "features": {
+    "workoutLog": true,
+    "goalTracking": true,
+    "progressAnalysis": true,
+    "autoReminder": true,
+    "statePersistence": true,
+    "muscleUpTracking": true
+  },
+  
+  "training": {
+    "phases": ["基礎力量", "爆發力", "技術轉換", "完整動作"],
+    "phaseLength": 4,
+    "muscleUpGoal": 1,
+    "progressionMethod": "漸進式超負荷"
+  },
+  
+  "security": {
+    "encryptSensitiveData": false,
+    "auditLog": true,
+    "maxSessionAge": 86400
+  },
+  
+  "performance": {
+    "maxLogSize": 10485760,
+    "maxWorkoutHistory": 100,
+    "cacheEnabled": true,
+    "cacheTTL": 3600
+  }
+}

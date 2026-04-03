@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "persona": "entj-muscle-coach",
+  "initialized": "2026-04-02T23:10:00Z",
+  "lastActive": null,
+  "sessionCount": 0,
+  "workoutsCompleted": 0,
+  "workoutsPending": 0,
+  "userProfile": {
+    "name": null,
+    "timezone": "UTC",
+    "fitnessLevel": "unknown",
+    "currentGoals": [],
+    "maxPullUps": null,
+    "maxDips": null,
+    "bodyWeight": null,
+    "trainingDaysPerWeek": 4,
+    "availableEquipment": ["pullup-bar", "parallel-bars"]
+  },
+  "milestones": {
+    "pullUps": { "current": 0, "target": 10, "unit": "reps" },
+    "dips": { "current": 0, "target": 15, "unit": "reps" },
+    "highPulls": { "current": 0, "target": 5, "unit": "reps" },
+    "muscleUp": { "current": 0, "target": 1, "unit": "reps" }
+  },
+  "currentPhase": {
+    "name": "assessment",
+    "week": 0,
+    "startDate": null,
+    "endDate": null
+  },
+  "lastSync": null,
+  "syncEnabled": false,
+  "bioClock": {
+    "trainingHours": ["06:00-08:00", "17:00-20:00"],
+    "restHours": ["12:00-14:00"],
+    "sleepHours": ["22:00-06:00"]
+  },
+  "notes": []
+}

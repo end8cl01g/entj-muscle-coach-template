@@ -1,0 +1,63 @@
+{
+  "version": "1.0.0",
+  "enabled": true,
+  "provider": "git",
+  "config": {
+    "git": {
+      "enabled": true,
+      "remote": "https://github.com/end8cl01g/entj-muscle-coach.git",
+      "branch": "main",
+      "autoCommit": true,
+      "commitMessage": "💪 auto-sync: {{timestamp}}"
+    },
+    "webdav": {
+      "enabled": false,
+      "url": null,
+      "username": null,
+      "passwordEnv": "WEBDAV_PASSWORD"
+    },
+    "s3": {
+      "enabled": false,
+      "bucket": null,
+      "region": null,
+      "accessKeyIdEnv": "AWS_ACCESS_KEY_ID",
+      "secretAccessKeyEnv": "AWS_SECRET_ACCESS_KEY"
+    },
+    "dropbox": {
+      "enabled": false,
+      "tokenEnv": "DROPBOX_TOKEN",
+      "path": "/openclaw/entj-muscle-coach"
+    },
+    "gdrive": {
+      "enabled": false,
+      "credentialsEnv": "GDRIVE_CREDENTIALS",
+      "folderId": null
+    }
+  },
+  "syncRules": {
+    "include": [
+      "state/*.json",
+      "state/*.md",
+      "cron/*.json",
+      "config/*.json",
+      "bioclock/*.json"
+    ],
+    "exclude": [
+      "*.log",
+      "*.tmp",
+      ".git/*"
+    ]
+  },
+  "conflictResolution": {
+    "strategy": "newest",
+    "backupBeforeOverwrite": true,
+    "notifyOnConflict": true
+  },
+  "schedule": {
+    "autoSync": false,
+    "intervalMs": 300000,
+    "syncOnWrite": true
+  },
+  "lastSync": null,
+  "syncHistory": []
+}

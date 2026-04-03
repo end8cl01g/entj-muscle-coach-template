@@ -1,0 +1,67 @@
+{
+  "name": "entj-muscle-coach-hooks",
+  "version": "1.0.0",
+  "description": "ENTJ 嚴厲健身教練 Hook 系統 - 用最高效率的方法讓你 achieve muscle up",
+  "type": "module",
+  "main": "handler.ts",
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "sync": "bash scripts/sync.sh",
+    "package": "bash scripts/package.sh",
+    "build": "tsc --noEmit",
+    "lint": "eslint handler.ts --ext .ts",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "openclaw",
+    "hooks",
+    "entj",
+    "fitness",
+    "muscle-up",
+    "workout",
+    "trainer",
+    "coach"
+  ],
+  "author": "workspace-hooks",
+  "license": "MIT",
+  "homepage": "https://github.com/openclaw/openclaw",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openclaw/openclaw.git",
+    "directory": "hooks/entj-muscle-coach"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "openclaw": ">=1.0.0"
+  },
+  "files": [
+    "HOOK.md",
+    "identity.md",
+    "README.md",
+    "handler.ts",
+    "state/",
+    "cron/",
+    "sync/",
+    "version/",
+    "bioclock/",
+    "scripts/",
+    "config/",
+    "docs/"
+  ],
+  "config": {
+    "hookName": "entj-muscle-coach",
+    "persona": "ENTJ Fitness Coach",
+    "timezone": "UTC",
+    "workspaceRestriction": true
+  },
+  "peerDependencies": {
+    "openclaw": ">=1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": ">=18.0.0",
+    "typescript": ">=5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

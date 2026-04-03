@@ -1,0 +1,135 @@
+{
+  "version": "1.0.0",
+  "timezone": "UTC",
+  "enabled": true,
+  
+  "dailyRhythm": {
+    "description": "每日生物鐘節律配置 - ENTJ 健身教練模式",
+    
+    "trainingHours": {
+      "name": "訓練時段",
+      "periods": [
+        {
+          "start": "06:00",
+          "end": "08:00",
+          "description": "晨間訓練 - 適合力量訓練，睾固酮水平高峰"
+        },
+        {
+          "start": "17:00",
+          "end": "20:00",
+          "description": "晚間訓練 - 適合技術訓練，體溫高峰，表現最佳"
+        }
+      ]
+    },
+    
+    "peakPerformance": {
+      "name": "高效時段",
+      "periods": [
+        {
+          "start": "10:00",
+          "end": "12:00",
+          "description": "上午高效期 - 適合規劃、學習訓練知識"
+        },
+        {
+          "start": "16:00",
+          "end": "19:00",
+          "description": "下午高效期 - 身體機能高峰，適合高強度訓練"
+        }
+      ]
+    },
+    
+    "rest": {
+      "name": "休息時段",
+      "periods": [
+        {
+          "start": "12:00",
+          "end": "14:00",
+          "description": "午餐休息 - 消化、恢復"
+        }
+      ]
+    },
+    
+    "sleep": {
+      "name": "睡眠時段",
+      "periods": [
+        {
+          "start": "22:00",
+          "end": "06:00",
+          "description": "夜間睡眠 - 肌肉修復與生長期"
+        }
+      ],
+      "restrictions": {
+        "noNotifications": true,
+        "noReminders": true,
+        "emergencyOnly": true
+      }
+    }
+  },
+  
+  "weeklyRhythm": {
+    "description": "每週訓練節奏",
+    
+    "trainingDays": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+    "restDays": ["saturday", "sunday"],
+    
+    "weeklyStructure": {
+      "monday": { "focus": "拉力", "intensity": "high" },
+      "tuesday": { "focus": "推力", "intensity": "high" },
+      "wednesday": { "focus": "技術", "intensity": "medium" },
+      "thursday": { "focus": "拉力", "intensity": "high" },
+      "friday": { "focus": "推力", "intensity": "high" },
+      "saturday": { "focus": "主動恢復", "intensity": "low" },
+      "sunday": { "focus": "完全休息", "intensity": "rest" }
+    }
+  },
+  
+  "periodization": {
+    "enabled": true,
+    "phaseLength": 4,
+    "phases": [
+      {
+        "name": "基礎力量",
+        "weeks": 4,
+        "focus": "肌力與肌耐力基礎",
+        "repRange": "5-12",
+        "intensity": "70-85%"
+      },
+      {
+        "name": "爆發力",
+        "weeks": 4,
+        "focus": "爆發力與速度",
+        "repRange": "3-6",
+        "intensity": "85-95%"
+      },
+      {
+        "name": "技術轉換",
+        "weeks": 4,
+        "focus": "動作技術與轉換",
+        "repRange": "1-5",
+        "intensity": "skill-focused"
+      },
+      {
+        "name": "實現",
+        "weeks": 4,
+        "focus": "完整 muscle up 達成",
+        "repRange": "1-3",
+        "intensity": "test-focused"
+      }
+    ]
+  },
+  
+  "recovery": {
+    "sleepTarget": 8,
+    "proteinIntakePerKg": 1.6,
+    "restDayActivity": "light",
+    "deloadWeek": true,
+    "deloadFrequency": 6
+  },
+  
+  "notifications": {
+    "trainingReminder": true,
+    "restDayReminder": true,
+    "sleepReminder": true,
+    "nutritionReminder": false
+  }
+}

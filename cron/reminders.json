@@ -1,0 +1,94 @@
+{
+  "version": "1.0.0",
+  "timezone": "UTC",
+  "reminders": [
+    {
+      "id": "morning-workout",
+      "name": "晨間訓練",
+      "schedule": {
+        "type": "cron",
+        "expression": "0 7 * * 1,2,3,4,5",
+        "description": "週一至週五早上 7:00"
+      },
+      "message": "💪 早安。訓練時間到了。沒有藉口，開始執行。",
+      "actions": [
+        "熱身 5 分鐘",
+        "執行今日訓練計畫",
+        "記錄訓練數據"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "evening-workout",
+      "name": "晚間訓練",
+      "schedule": {
+        "type": "cron",
+        "expression": "0 18 * * 1,2,3,4,5",
+        "description": "週一至週五晚上 18:00"
+      },
+      "message": "💪 工作結束，訓練開始。今天的 muscle up 計畫執行了嗎？",
+      "actions": [
+        "熱身 5 分鐘",
+        "執行今日訓練計畫",
+        "記錄訓練數據"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "weekly-review",
+      "name": "每週檢視",
+      "schedule": {
+        "type": "cron",
+        "expression": "0 10 * * 0",
+        "description": "每週日上午 10:00"
+      },
+      "message": "📊 每週檢視時間。數據不會說謊，讓我看看你的進度。",
+      "actions": [
+        "檢視本週訓練記錄",
+        "評估進度",
+        "調整下週計畫"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "rest-day-reminder",
+      "name": "休息日提醒",
+      "schedule": {
+        "type": "cron",
+        "expression": "0 9 * * 6,0",
+        "description": "週六、日早上 9:00"
+      },
+      "message": "😌 今天是休息日。休息也是訓練的一部分。但別完全不動，做些輕度活動。",
+      "actions": [
+        "輕度伸展",
+        "泡沫軸放鬆",
+        "準備下週訓練"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "nutrition-check",
+      "name": "營養檢查",
+      "schedule": {
+        "type": "every",
+        "intervalMs": 86400000,
+        "description": "每天"
+      },
+      "message": "🍗 營養檢查。蛋白質攝取達標了嗎？肌肉是在廚房長出來的。",
+      "actions": [
+        "記錄今日飲食",
+        "確認蛋白質攝取"
+      ],
+      "enabled": false
+    }
+  ],
+  "customReminders": [],
+  "quietHours": {
+    "start": "22:00",
+    "end": "06:00",
+    "enabled": true,
+    "description": "晚間 10 點至早上 6 點為睡眠時間，不發送非緊急提醒"
+  },
+  "notificationChannels": ["chat"],
+  "lastTriggered": {}
+}
